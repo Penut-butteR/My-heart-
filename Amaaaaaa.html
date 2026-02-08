@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The love of my lifeeee</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffc0cb, #dda0dd);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(-45deg);
+      animation: float 6s linear infinite;
+    }
+    .heart:before,
+    .heart:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart:before { top: -10px; left: 0; }
+    .heart:after { left: 10px; top: 0; }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(-45deg); opacity: 1; }
+      100% { transform: translateY(-800px) rotate(-45deg); opacity: 0; }
+    }
+
+    /* Container and text */
+    .container {
+      max-width: 900px;
+      margin: 80px auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    .text {
+      flex: 1 1 400px;
+    }
+
+    .text h1 {
+      color: #ff1493;
+      font-family: 'Pacifico', cursive;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 4px #ff69b4;
+    }
+
+    .text p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #800080;
+    }
+
+    /* Image styles */
+    .image-placeholder {
+      flex: 1 1 300px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(255,20,147,0.4);
+      background: #ffb6c1; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto; /* automatically fits the image */
+    }
+
+    .fit-image {
+      width: 100%;
+      height: auto; /* image keeps its original height */
+      display: block;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .image-placeholder {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating hearts -->
+  <div class="heart" style="left: 10%; animation-duration: 5s;"></div>
+  <div class="heart" style="left: 30%; animation-duration: 7s;"></div>
+  <div class="heart" style="left: 50%; animation-duration: 6s;"></div>
+  <div class="heart" style="left: 70%; animation-duration: 8s;"></div>
+  <div class="heart" style="left: 90%; animation-duration: 5.5s;"></div>
+
+  <div class="container">
+    <div class="text">
+      <h1>Welcome to My Heart!</h1>
+      <p>
+        I made this website to help you understand just how much I love you Amaaaa. Your smile melts my heart, it's so kind and genuine, and your voice is so soft and caring. You have the most enticing amazing eyes I would not mind spending eternity staring into. You have such a kind and sweet personality and I love you with all my heart.
+      </p>
+    </div>
+
+    <!-- Image goes here -->
+    <div class="image-placeholder">
+      <img src="I LOVE YOU SOOO MUCHHH.png" alt="Cute Image" class="fit-image">
+    </div>
+  </div>
+</body>
+</html>
